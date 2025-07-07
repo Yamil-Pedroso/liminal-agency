@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# Liminal – Creative Design Agency Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository of **Liminal**, a digital design agency focused on crafting elegant user experiences through design, motion, and interaction.
 
-Currently, two official plugins are available:
+![Liminal Screenshot](./public/images/hero/hero1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** – UI library
+- **TypeScript** – type-safe development
+- **Vite** – blazing fast build tool
+- **Framer Motion** – animations and interactions
+- **Supabase** – backend and database
+- **Tailwind CSS** – (optional, if you're using it)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Live Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+👉 [liminal.digital](https://liminal.digital)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yamil-pedroso/liminal-agency
+cd liminal-agency
+npm install
+npm run dev
+
+## 🎨 Inspiration
+
+This project was inspired by the **Arpeggio** template on [Framer](https://framer.com).
+While the layout, scroll effects, and motion ideas served as references, all code, images, and written content were created from scratch for Liminal.
+
+
+---
+
+## 📄 License
+
+All rights reserved © Liminal Agency 2025.
