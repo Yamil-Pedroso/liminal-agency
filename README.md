@@ -16,9 +16,11 @@ Welcome to the official repository of **Liminal**, a digital design agency focus
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo Web
 
 👉 Visit: https://liminal-devv1.netlify.app/
+
+🛠️ *Responsive design will be added in a future update.*
 
 ---
 
