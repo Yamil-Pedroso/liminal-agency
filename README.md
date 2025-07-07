@@ -2,7 +2,7 @@
 
 Welcome to the official repository of **Liminal**, a digital design agency focused on crafting elegant user experiences through design, motion, and interaction.
 
-![Liminal Screenshot](./public/images/hero/hero1.png)
+![Liminal Screenshot](./public/images/hero/img-readme.png)
 
 ---
 
