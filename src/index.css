@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playball&display=swap");
+@import "tailwindcss";
+
+body {
+  @apply bg-black;
+  cursor: none !important;
+}
+
+input,
+button,
+a,
+textarea,
+select {
+  cursor: none !important;
+}
+
+body,
+html,
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-script: "Playball", cursive;
+
+  --color-orange-accent: #ff4401;
+  --color-primary: #f6f6f6;
+  --color-secondary: #c0c0c0;
+  --color-accent: #8a8a91;
+  --color-background: #1e1e1e;
+  --color-border: #464648;
+}
+
+.hover-trigger:hover + .hover-underline {
+  width: 100%;
+}
