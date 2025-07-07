@@ -12,14 +12,13 @@ Welcome to the official repository of **Liminal**, a digital design agency focus
 - **TypeScript** – type-safe development
 - **Vite** – blazing fast build tool
 - **Framer Motion** – animations and interactions
-- **Supabase** – backend and database
 - **Tailwind CSS** – (optional, if you're using it)
 
 ---
 
 ## 🚀 Live Demo
 
-👉 [liminal.digital](https://liminal.digital)
+👉 https://liminal-devv1.netlify.app/
 
 ---
 
