@@ -63,3 +63,10 @@ export interface FooterProps {
     link: string;
   }[];
 }
+
+export interface TeamProps extends SectionContent {
+  name: string;
+  position: string;
+  avatar: string;
+  grettings: string;
+}

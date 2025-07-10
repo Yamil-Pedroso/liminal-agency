@@ -35,7 +35,6 @@ const Advantages = () => {
         {/* Fila 1 */}
         <GridBlock
           height="650px"
-          // Dame un responsive grid que ocupe toda la pantalla
           className="col-start-1 row-start-1 row-span-1 relative  "
           background="bg-gradient-to-br from-[#c4c7c6] to-[#e5e6e5] "
         >
@@ -49,7 +48,7 @@ const Advantages = () => {
               </p>
             </div>
             <img
-              src={advantagesData[0].image?.src[0]}
+              src={advantagesData[0].image?.src}
               alt={advantagesData[0].image?.alt}
               className="absolute bottom-[-3rem] left-[-5rem] "
             />
@@ -111,7 +110,7 @@ const Advantages = () => {
         >
           <div className="relative w-full h-full">
             <img
-              src={advantagesData[3].image?.src[0]}
+              src={advantagesData[3].image?.src}
               alt={advantagesData[3].image?.alt}
               className="w-full h-full object-cover brightness-110"
             />
@@ -239,7 +238,7 @@ const Advantages = () => {
               </div>
               <div className=" ">
                 <img
-                  src={advantagesData[8].image?.src[0]}
+                  src={advantagesData[8].image?.src}
                   alt={advantagesData[8].image?.alt}
                   className="w-full h-full brightness-110
                    hover:right-0 transition-all duration-500 ease-in-out hover:scale-105
