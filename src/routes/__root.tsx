@@ -13,8 +13,8 @@ function RootComponent() {
   return (
     <MenuProvider>
       <MainLayout>
-        <ModalView />
         <CustomCursor />
+        <ModalView />
         <Outlet />
       </MainLayout>
     </MenuProvider>

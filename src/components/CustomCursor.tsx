@@ -44,7 +44,7 @@ const CustomCursor = () => {
             damping: 20,
             duration: 2,
           }}
-          className="fixed z-[9999] pointer-events-none"
+          className="fixed "
           style={{
             top: position.y,
             left: position.x,
@@ -55,6 +55,7 @@ const CustomCursor = () => {
             transform: "translate(-50%, -50%)",
             position: "fixed",
             mixBlendMode: "difference",
+            zIndex: 1000,
           }}
         />
       )}
