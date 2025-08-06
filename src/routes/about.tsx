@@ -6,6 +6,7 @@ import AboutServices from "@/components/about-agency/services/AboutServices";
 import Team from "@/components/about-agency/team/Team";
 import OurStrategy from "@/components/our-strategy/OurStrategy";
 import Celebration from "@/components/about-agency/celebration/Celebration";
+import AboutHonors from "@/components/about-agency/honors/AboutHonors";
 
 export const Route = createFileRoute("/about")({
   component: About,
@@ -21,6 +22,7 @@ function About() {
       <Team />
       <OurStrategy />
       <Celebration />
+      <AboutHonors />
     </>
   );
 }

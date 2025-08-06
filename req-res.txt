@@ -1,0 +1,48 @@
+import express from "express";
+
+const app = express();
+const PORT = 3000;
+
+app.use(express.json()); // Para poder leer req.body en JSON
+
+app.post("/info", (req, res) => {
+  console.log("========= REQUEST (req) =========");
+  console.log("req.body:", req.body); // Datos enviados en el cuerpo (POST, PUT)
+  console.log("req.params:", req.params); // Parámetros de la ruta (por ejemplo /user/:id)
+  console.log("req.query:", req.query); // Parámetros en la URL (por ejemplo /search?q=react)
+  console.log("req.headers:", req.headers); // Headers del cliente
+  console.log("req.method:", req.method); // GET, POST, PUT, DELETE
+  console.log("req.url:", req.url); // URL accedida
+  console.log("req.path:", req.path); // Ruta sin query string
+
+  const responseData = {
+    message: "Datos recibidos correctamente",
+    method: req.method,
+    path: req.path,
+    body: req.body,
+    query: req.query,
+  };
+
+  console.log("========= RESPONSE (res) =========");
+  console.log("res.statusCode:", res.statusCode); // Código de respuesta actual
+
+  res.status(200).json(responseData);
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});
+
+// res
+🛠️ Métodos más utilizados de res
+Método	Qué hace
+res.status(code)	Define el código de estado HTTP (ej. 200, 404, 500...).
+res.send(body)	Envía una respuesta al cliente (puede ser string, buffer, objeto, etc).
+res.json(obj)	Envía una respuesta en formato JSON.
+res.sendFile(path)	Envía un archivo al cliente.
+res.redirect(url)	Redirige a otra URL.
+res.set(field, value)	Define un header específico.
+res.append(field, val)	Agrega un valor a un header existente.
+res.cookie(name, val)	Define una cookie.
+res.clearCookie(name)	Elimina una cookie del cliente.
+res.end()	Finaliza el proceso de respuesta sin enviar nada adicional.

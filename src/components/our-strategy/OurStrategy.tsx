@@ -22,14 +22,10 @@ const OurStrategy = () => {
       </div>
 
       <div className="flex justify-center gap-12 mx-auto mt-[5rem]">
-        {[
-          { title: "hola mundo 1" },
-          { title: "hola mundo 2" },
-          { title: "hola mundo 3" },
-        ].map((t, inx) => (
+        {strategyContent.map((img, inx) => (
           <div key={inx}>
-            <div className="w-[32rem] h-[46rem] bg-[#cccccc] flex items-center justify-center text-xl">
-              <p className="text-center">{t.title}</p>
+            <div className="w-[32rem] h-[46rem] bg-[#cccccc] flex items-center justify-center text-xl overflow-hidden border-2 border-gray-800">
+              <img src={img.image?.src} alt={img.image?.alt} />
             </div>
           </div>
         ))}

@@ -15,16 +15,28 @@ export const strategyContent: SectionContent[] = [
     number: "01/",
     subtitle:
       "Great design starts with purpose. We align aesthetics with business goals to create solutions that truly matter.",
+    image: {
+      src: "./images/about/strategy/img1.png",
+      alt: "strategy-img1",
+    },
   },
   {
     number: "02/",
     subtitle:
       "We focus on meaningful impact over quick fixes. Each collaboration is a chance to build long-term value through intentional design.",
+    image: {
+      src: "./images/about/strategy/img2.png",
+      alt: "strategy-img2",
+    },
   },
   {
     number: "03/",
     subtitle:
       "Our strength lies in clarity and teamwork. Together, we simplify complexity into intuitive, high-impact digital experiences.",
+    image: {
+      src: "./images/about/strategy/img3.png",
+      alt: "strategy-img3",
+    },
   },
 ];
 
