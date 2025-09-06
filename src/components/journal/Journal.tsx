@@ -43,7 +43,7 @@ const Insights = () => {
                   <img
                     src={item.image?.src}
                     alt={item.image?.alt}
-                    className={`w-full h-full object-cover `}
+                    className={`w-full h-full object-cover`}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
                     style={{

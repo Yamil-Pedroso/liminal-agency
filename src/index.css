@@ -4,6 +4,7 @@
 body {
   @apply bg-black;
   cursor: none !important;
+  overflow-x: hidden;
 }
 
 input,
