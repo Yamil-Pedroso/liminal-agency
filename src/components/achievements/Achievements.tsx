@@ -27,28 +27,34 @@ const Achievements = () => {
     }
   }, [isInView, controls]);
   return (
-    <section className="flex flex-col  gap-4 w-full mt-[20rem] px-12">
-      <div className="flex items-center gap-4">
-        <h2 className="text-[#C0C0C0]">Our Impact |</h2>{" "}
-        <span className="text-[2rem] font-light text-[#8a8a91]">
-          metrics & milestones
-        </span>
-      </div>
-      <div className="w-[90%] h-[1px] bg-[#464648]" />
+    <section className="flex flex-col gap-4 w-full mt-[20rem] px-12">
+      <div className="flex flex-col gap-6">
+        <div className="flex flex-col text-center items-center lg:flex-row gap-4">
+          <h2 className="flex text-[#C0C0C0] underline underline-offset-10 lg:no-underline lg:text-[2rem]">
+            Our Impact
+          </h2>{" "}
+          <div className="hidden h-10 border-l-1 border-white ml-2 lg:block"></div>
+          <span className="text-[2rem] lg:text-[1.0625rem] font-light text-[#8a8a91]">
+            metrics & milestones
+          </span>
+        </div>
 
-      <div className="max-w-[70rem]">
-        <h2 className="text-[5rem] text-[#f6f6f6] text-base/23">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
-        </h2>
-        <p className="text-[2rem] text-[#C0C0C0]">
-          Lorem ipsum dolor sit amet consectetur.
-        </p>
+        <div className=" h-[1px] bg-[#464648]" />
+
+        <div className="max-w-[70rem] flex flex-col text-center lg:text-left gap-2">
+          <h2 className="text-[2.5rem] text-base/11 lg:text-[5rem] text-[#f6f6f6] lg:text-base/23">
+            Every figure hides the rhythm of a human story.
+          </h2>
+          <p className="text-[1.5rem] lg:text-[2rem] text-[#C0C0C0]">
+            Reinventing industries, pixel by flawless pixel.
+          </p>
+        </div>
       </div>
 
-      <div className="flex mt-30 gap-16">
-        <div className="text-[#C0C0C0] w-[50%] h-[30rem] overflow-hidden relative">
+      <div className="mx-auto flex flex-col justify-center 2xl:flex-row mt-10 lg:mt-30 gap-16">
+        <div className="text-[#C0C0C0] w-full h-[40rem] 2xl:w-[50%] 2xl:h-[30rem] overflow-hidden relative">
           <img
-            className="w-full h-full object-cover "
+            className="w-full 2xl:w-full 2xl:h-full object-cover "
             src="./images/achievements/img5.png"
             alt="Achievements"
           />
@@ -58,15 +64,18 @@ const Achievements = () => {
             whileHover={{ scale: 1.2 }}
             animate={controls}
             className="
-             absolute
-             left-1/2 top-1/2
+             absolute top-1/2 left-1/2
+             2xl:left-1/2 2xl:top-1/2
              -translate-x-1/2 -translate-y-1/2
             bg-gray-200/40
             backdrop-blur-md
             border border-gray-300/30
             rounded-full
-            px-6 py-4
-            text-[3.5rem]
+            px-7 py-2 -my-24
+            text-[3rem]
+            lg:mt-20 2xl:mt-0
+            2xl:px-6 2xl:py-4
+            lg:text-[5rem]
             font-bold
             whitespace-nowrap
             text-gray-100
