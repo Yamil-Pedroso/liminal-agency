@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { heroSection } from "@/data/heroSection";
 import { MotionValue, useAnimation } from "framer-motion";
+
 import { TbTriangleSquareCircleFilled } from "react-icons/tb";
 import { useMenu } from "@/components/context/MenuContext";
 
@@ -195,8 +196,8 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-start pt-[20vh] text-white bg-black/20 px-28">
-        <div className="flex justify-between w-full">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-start pt-[20vh] text-white bg-black/20 px-8 lg:px-28">
+        <div className="w-full flex flex-col lg:flex-row lg:justify-between">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -210,7 +211,7 @@ const Hero = () => {
             style={{ opacity: subOpacity, y: subY }}
             className="max-w-[810px] relative"
           >
-            <motion.h2 className="text-[4.5rem] text-base/18">
+            <motion.h2 className="text-[4.5rem]  text-base/18 ">
               {heroSection.subtitle?.[0]}
             </motion.h2>
             <motion.h2
@@ -253,7 +254,7 @@ const Hero = () => {
               mass: 0.5,
               delay: 0.5,
             }}
-            className="max-w-[28rem] text-[5.6rem] text-center font-display text-base/16 mt-3.5 relative"
+            className="max-w-[28rem] text-[5.6rem] text-center font-display text-base/16 relative mt-10 lg:mt-3.5"
           >
             {heroSection.subtitle?.[2]}
           </motion.h2>
@@ -281,7 +282,7 @@ const Hero = () => {
             mass: 1.2,
             delay: 0.2,
           }}
-          className={`font-bold text-[#ff4401] leading-none ${
+          className={`font-bold text-[#ff4401] leading-none  ${
             isOpenMenu ? "z-0" : "z-50"
           } ${
             isFixed

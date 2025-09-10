@@ -30,13 +30,11 @@ const AIVideo: React.FC<AIVideoProps> = ({
     if (!flicker) return;
 
     const startFlicker = () => {
-      // 🔥 Primera ráfaga (pa!)
       setIsGrayscale(false);
       setTimeout(() => {
         setIsGrayscale(true);
       }, 100);
 
-      // 🔥 Segunda ráfaga (pa!)
       setTimeout(() => {
         setIsGrayscale(false);
       }, 300);

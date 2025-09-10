@@ -34,25 +34,20 @@ const ProductsDesign = () => {
         className="relative w-full h-[200vh] bg-gradient-to-b  to-black"
       >
         {/* Imagen central fija */}
-        <div className="sticky top-[15vh] z-1 h-[70vh] w-[60vw] mx-auto flex items-center justify-center">
+        <div className="sticky top-[30vh] lg:top-[15vh] z-1 h-[50vh] lg:h-[70vh] w-[60vw] mx-auto flex items-center justify-center">
           <div className="relative h-full w-full rounded-xl shadow-2xl overflow-hidden">
             <motion.p
               className="absolute  text-white  font-bold text-center flex items-center justify-center h-full max-w-full  left-1/2 -translate-x-1/2"
               style={{ fontSize: increaseTextSize, opacity: textOpacity }}
             >
-              <span className="text-8xl">
+              <span className="text-5xl lg:text-8xl transition-all duration-300">
                 Crafting moments for now & visions for beyond.
               </span>
             </motion.p>
-            {/*<motion.img
-              style={{ scale: decreaseMainImageSize }}
-              src="./images/productsDesign/img1.jpg"
-              alt="Producto Central"
-              className="h-full w-full object-cover"
-            />*/}
+
             <AIVideo
               src="./videos/ai-smoke.mp4"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover "
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
@@ -64,7 +59,7 @@ const ProductsDesign = () => {
           style={{ y: yLeft1 }}
           className="absolute left-[-12%] top-[20%] z-[1]"
         >
-          <div className="h-[25vh] w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-10deg]">
+          <div className="h-auto w-[40vw] lg:h-[25vh] lg:w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-10deg]">
             <img
               src="./images/productsDesign/img2.jpg"
               alt="Producto 1"
@@ -78,7 +73,7 @@ const ProductsDesign = () => {
           style={{ y: yRight1 }}
           className="absolute right-[-12%] top-[25%] z-[1]"
         >
-          <div className="h-[20vh] w-[12vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[8deg]">
+          <div className="h-auto w-[25vw] lg:h-[20vh] lg:w-[12vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[8deg]">
             <img
               src="./images/productsDesign/img3.jpg"
               alt="Producto 2"
@@ -90,9 +85,9 @@ const ProductsDesign = () => {
         {/* Grupo izquierdo 2 */}
         <motion.div
           style={{ y: yLeft2 }}
-          className="absolute left-[-10%] top-[60%] z-[1]"
+          className="absolute left-[-10%] top-[40%] lg:top-[60%] z-[1]"
         >
-          <div className="h-[28vh] w-[16vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[5deg]">
+          <div className="h-auto w-[30vw] lg:h-[28vh] lg:w-[16vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[5deg]">
             <img
               src="./images/productsDesign/img4.jpg"
               alt="Producto 3"
@@ -104,9 +99,9 @@ const ProductsDesign = () => {
         {/* Grupo derecho 2 */}
         <motion.div
           style={{ y: yRight2 }}
-          className="absolute right-[-10%] top-[55%] z-[1]"
+          className="absolute right-[-10%] top-[50%] lg:top-[55%] z-[1]"
         >
-          <div className="h-[22vh] w-[14vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-12deg]">
+          <div className="h-auto w-[30vw] lg:h-[22vh] lg:w-[14vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-12deg]">
             <img
               src="./images/productsDesign/img5.jpg"
               alt="Producto 4"
@@ -118,9 +113,9 @@ const ProductsDesign = () => {
         {/* Grupo izquierdo 3 */}
         <motion.div
           style={{ y: yLeft3 }}
-          className="absolute left-[-8%] top-[90%] z-[1]"
+          className="absolute left-[-8%] top-[75%] lg:top-[90%] z-[1]"
         >
-          <div className="h-[24vh] w-[13vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-5deg]">
+          <div className="h-auto w-[40vw] lg:h-[24vh] lg:w-[13vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-5deg]">
             <img
               src="./images/productsDesign/img6.jpg"
               alt="Producto 5"
@@ -132,9 +127,9 @@ const ProductsDesign = () => {
         {/* Grupo derecho 3 */}
         <motion.div
           style={{ y: yRight3 }}
-          className="absolute right-[-8%] top-[85%] z-[1]"
+          className="absolute right-[-8%] top-[90%] lg:top-[85%] z-[1]"
         >
-          <div className="h-[26vh] w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[15deg]">
+          <div className="h-auto w-[40vw] lg:h-[26vh] lg:w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[15deg]">
             <img
               src="./images/productsDesign/img7.jpg"
               alt="Producto 6"
