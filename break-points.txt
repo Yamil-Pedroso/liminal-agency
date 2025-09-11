@@ -5,3 +5,7 @@ md	md:	768px	Tablets
 lg	lg:	1024px	Laptops
 xl	xl:	1280px	Desktops
 2xl	2xl:	1536px	Pantallas muy grandes, 4K
+
+// Orden de las clases de estilos
+
+Tailwind (posición → display → layout → sizing → spacing → tipografía → color → efectos → interactividad → responsive)

@@ -91,9 +91,9 @@ const Achievements = () => {
           </motion.button>
         </div>
 
-        <div className="flex items-center w-[50%] gap-22">
-          <div className="flex items-center h-[20rem] gap-10">
-            <div className="flex flex-col gap-4 max-w-[30rem]">
+        <div className="flex items-center justify-center 2xl:w-[50%] gap-22 ">
+          <div className="flex flex-col justify-center mt-15 lg:w-full lg:justify-between lg:flex-row 2xl:items-center h-[20rem] gap-10 ">
+            <div className="flex flex-col text-center gap-4 lg:text-left 2xl:max-w-[30rem]">
               <p className="text-[#C0C0C0]">
                 OUTSTANDING DIGITAL EXPERIENCE 2025
               </p>
@@ -105,31 +105,37 @@ const Achievements = () => {
                 Awards, honored for delivering an immersive campaign in
                 collaboration with leading VR innovator, Boreal.
               </p>
-              <p className="text-[#C0C0C0]">explore case study</p>
+              <p className="text-white text-[1.5rem]">explore case study</p>
             </div>
 
-            <div className="h-full border-l-1 border-dashed border-[#5b5b5b] ml-24"></div>
-            <div className="flex flex-col gap-4">
-              <div>
-                <p className="text-[#C0C0C0]">audience retention</p>
-                <span className="text-[4rem] text-[#f6f6f6]">50%</span>
-              </div>
-              <div>
-                <p className="text-[#C0C0C0]">business uplift</p>
-                <span className="text-[4rem] text-[#f6f6f6]">30%</span>
+            <div className="h-full flex justify-center gap-14 lg:mr-20 2xl:mr-0">
+              <div className="h-full border-l-1 border-dashed border-[#5b5b5b] ml-24 hidden lg:block"></div>
+              <div className="w-full flex justify-between  lg:justify-around lg:flex-col ">
+                <div>
+                  <p className="text-[var(--color-accent)] uppercase">
+                    audience retention
+                  </p>
+                  <span className="text-[4rem] text-[#f6f6f6]">50%</span>
+                </div>
+                <div>
+                  <p className="text-[var(--color-accent)] uppercase">
+                    business uplift
+                  </p>
+                  <span className="text-[4rem] text-[#f6f6f6]">30%</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-around items-center mt-20">
+      <div className="flex flex-wrap justify-around items-center mt-30 lg:mt-20 gap-20 lg:gap-10">
         {achievementsData.map((item, idx) => (
           <>
             {idx > 0 && (
-              <div className="h-28 border-l-2 border-dashed border-[#5b5b5b]" />
+              <div className="h-28 border-l-2 border-dashed border-[#5b5b5b] hidden lg:block" />
             )}
-            <div className="flex flex-col items-center " key={idx}>
-              <p className="max-w-[15rem] text-[2rem] text-[#8A8A91] font-light text-base/9 text-center">
+            <div className="flex flex-col items-center" key={idx}>
+              <p className="max-w-[12rem] lg:max-w-[15rem] uppercase  text-[#8A8A91] font-light text-base/6 text-center">
                 {item.title}
               </p>
 

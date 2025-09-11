@@ -56,12 +56,12 @@ const FunFactWithMotion: React.FC<FunFactProps> = ({ to, duration = 1.5 }) => {
       <div className="flex items-center">
         {rounded.map((digit, index) => (
           <div key={index} className="flex justify-center items-center">
-            <motion.span className="text-[6rem] font-light text-[#C0C0C0]">
+            <motion.span className="text-[2.625rem] lg:text-[6rem] font-light text-[#C0C0C0]">
               {digit}
             </motion.span>
           </div>
         ))}
-        <span className="text-[#C0C0C0] text-8xl">
+        <span className="text-[#C0C0C0] text-[2.625rem]  lg:text-8xl">
           {digits.length > 1 ? "+" : ""}
         </span>
       </div>
