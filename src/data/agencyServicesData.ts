@@ -5,7 +5,7 @@ export const agencyServicesData: SectionContent[] = [
     title: "Brand Craft",
     number: "01",
     description:
-      "We shape meaningful brand experiences — from strategic insight to visual expression — building deep connections with your audience.",
+      "We shape meaningful brand experiences from strategic insight to visual expression building deep connections with your audience.",
     subtitle: [
       "Positioning Strategy",
       "Logo & Identity Systems",
@@ -33,7 +33,7 @@ export const agencyServicesData: SectionContent[] = [
     title: "Tech & Build",
     number: "03",
     description:
-      "We engineer performant digital products using modern tech stacks — flexible, scalable, and built to last.",
+      "We engineer performant digital products using modern tech stacks flexible, scalable, and built to last.",
     subtitle: [
       "End-to-End Development",
       "Framer & Webflow Build",

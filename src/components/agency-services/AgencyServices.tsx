@@ -61,7 +61,7 @@ const AgencyServices = () => {
         {/* Grid Container */}
 
         <div className="z-10 flex w-screen flex-col justify-center gap-16 bg-white mt-[5rem] xl:mt-[16rem]">
-          <div className="mt-14 flex flex-col items-center justify-center text-center xl:hidden">
+          <div className="mt-14 mb-[-3rem] flex flex-col items-center justify-center text-center xl:hidden">
             <h2 className="font-bold text-[3.5rem] sm:text-[5rem] md:text-[7rem] transition-all duration-300 ease-in-out">
               what we offer
             </h2>
@@ -69,7 +69,7 @@ const AgencyServices = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing voluptatum.
             </h3>
           </div>
-          <div className="mx-auto w-full bg-white p-10">
+          <div className="w-full mx-auto  bg-white p-10">
             {agencyServicesData.map((service, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -82,31 +82,32 @@ const AgencyServices = () => {
                 }}
                 viewport={{ once: false, amount: 0.2 }}
                 key={index}
-                className="grid w-full grid-cols-[1fr_2fr_1fr] border-b border-[#d6d6d6] py-12 last:border-b-0"
+                className="grid w-full justify-items-center text-center grid-cols-1 xl:grid-cols-[1fr_2fr_1fr]  xl:justify-items-stretch
+        xl:text-left border-b border-[#d6d6d6] py-12 last:border-b-0 "
               >
                 {/* Title */}
-                <div className="flex items-start ml-12 text-black">
+                <div className="flex items-start xl:ml-12 text-black">
                   <span className="flex items-center my-[-1rem] text-[1.5rem] font-bold text-orange-accent">
                     [<span className="mt-[.2rem]">{service.number}</span>]
                   </span>
                   <div className="flex items-center gap-2">
-                    <h2 className="ml-4.5 whitespace-nowrap text-5xl font-medium">
+                    <h2 className="ml-4.5 whitespace-nowrap text-4xl xl:text-5xl font-medium">
                       {service.title}
                     </h2>
-                    <span className="mt-[.5rem] w-[3rem] h-[4px] bg-black"></span>
+                    <span className="mt-[.5rem] w-[2rem] h-[3px] xl:w-[3rem] xl:h-[4px] bg-black"></span>
                   </div>
                 </div>
 
                 {/* Description */}
-                <div className="flex items-start justify-center">
-                  <p className="max-w-[600px] text-left text-[2rem] font-bold text-[#b9b9b9]">
+                <div className="flex xl:items-start justify-center mt-5 xl:mt-0">
+                  <p className="max-w-[600px] text-base/10 xl:text-left text-[1.8rem]  xl:text-[2rem] xl:font-bold text-[#b9b9b9]">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Subtitles */}
-                <div className="flex justify-end mr-12 text-black">
-                  <ul className="text-right space-y-2">
+                <div className="flex justify-end mt-5 xl:mt-0 xl:mr-12 text-black">
+                  <ul className="xl:text-right space-y-2">
                     {Array.isArray(service.subtitle) ? (
                       service.subtitle.map((item, subIndex) => (
                         <li
@@ -126,14 +127,22 @@ const AgencyServices = () => {
           </div>
 
           {/* Texto inferior */}
-          <div className="mx-auto mt-20 flex items-center gap-2.5 p-6 text-center text-black">
-            <p className="font-display text-5xl">Time to create?</p>
-            <div className="h-12 w-px bg-[#6f6f6f]"></div>
+          <div className="mx-auto flex flex-col items-center gap-6 p-6 text-center text-black xl:flex-row xl:mt-20">
+            <p className="font-display text-5xl underline underline-offset-[.8rem] decoration-1 decoration-accent">
+              Time to create?
+            </p>
+            <div className="h-12 w-px bg-[#6f6f6f] hidden xl:block"></div>
 
-            <div className="flex text-3xl">
-              <div className="flex gap-4 text-3xl">
-                <HoverUnderlineLink text="discover our craft" />
-                <HoverUnderlineLink text="choose a plan" />
+            <div className="flex ">
+              <div className="flex gap-4 ">
+                <HoverUnderlineLink
+                  classNameText="!text-2xl xl:!text-3xl"
+                  text="discover our craft"
+                />
+                <HoverUnderlineLink
+                  classNameText="!text-2xl xl:!text-3xl"
+                  text="choose a plan"
+                />
               </div>
             </div>
           </div>

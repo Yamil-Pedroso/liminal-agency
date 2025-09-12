@@ -10,7 +10,7 @@ const HoverUnderlineLink = ({
   return (
     <div className="relative inline-block group mb-1.5">
       <span
-        className={`text-3xl group-hover:text-[var(--color-orange-accent)] ${classNameText}`}
+        className={`text-3xl group-hover:text-[var(--color-orange-accent)] whitespace-nowrap ${classNameText}`}
       >
         {text}
       </span>
