@@ -28,24 +28,28 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <header className="p-4 fixed top-0 left-0 w-full z-50">
-      <nav className="flex justify-between items-center">
-        <ul className="flex items-center z-[999]">
+      <nav className={`flex justify-between items-center`}>
+        <ul
+          className={`z-[999] lg:inline-flex  ${!isOpenMenu ? "hidden" : "inline-flex"}`}
+        >
           {defaultItems.map((icon, index) => (
             <li
               key={index}
-              className="mx-4 w-[3rem] h-[3rem] rounded-full bg-[#3f3f3f] flex justify-center items-center hover:scale-70 transition-transform duration-300"
+              className={`mx-4 lg:w-[3rem] lg:h-[3rem] rounded-full ${isOpenMenu ? "bg-transparent" : "bg-[#3f3f3f]"} flex justify-center items-center hover:scale-70 transition-transform duration-300`}
             >
               <a
                 href={`#${icon}`}
-                className="text-[#ff4401] hover:scale-210 transition-transform duration-300 "
+                className="text-[#ff4401] hover:scale-210 transition-transform duration-300"
               >
-                {React.createElement(icon, { size: 36 })}
+                {React.createElement(icon, {
+                  className: "w-6 h-6 sm:w-[2.25rem] sm:h-[2.25rem]",
+                })}
               </a>
             </li>
           ))}
         </ul>
 
-        <div className="z-[999]">
+        <div className={`z-[999] ml-auto`}>
           <ToggleIcon isOpen={isOpenMenu} toggleMenu={toggleMenu} />
         </div>
       </nav>

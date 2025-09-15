@@ -18,13 +18,13 @@ const SectionHeader2 = ({
   return (
     <div className={`flex flex-col mb-14 ${className}`}>
       <h2
-        className={`text-[#333336] text-[4.5rem] font-semibold ${titleStyle}`}
+        className={`text-[#333336] text-[3rem] md:text-[4.5rem] font-semibold text-base/12 md:text-base/16 ${titleStyle}`}
       >
         {title}
       </h2>
       {subtitle && (
         <p
-          className={`text-[#848a91] text-[2.1rem] font-semibold max-w-[50rem] text-base/11 ${subtitleStyle}`}
+          className={`max-w-[20rem] mx-auto text-[#848a91] text-[1.8rem] md:text-[2.1rem] font-semibold md:mx-0  md:max-w-[50rem] text-base/10 mt-6  ${subtitleStyle}`}
         >
           {subtitle}
         </p>

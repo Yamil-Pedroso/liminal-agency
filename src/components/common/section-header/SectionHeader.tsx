@@ -18,12 +18,14 @@ const SectionHeader = ({
   };
 
   return (
-    <div className={`flex gap-5 ${alignment[align]} ${className}`}>
+    <div
+      className={`flex flex-col-reverse md:flex-row gap-5 ${alignment[align]} ${className}`}
+    >
       <h2 className="text-[2.1rem] font-bold text-[#848a91]">{title}</h2>
 
-      <span className="w-[1px] h-[3rem] bg-[#8d8d8d]"></span>
+      <span className="w-[1px] h-[3rem] bg-[#8d8d8d] hidden md:block"></span>
       {subtitle && (
-        <p className="text-[1.0625rem] text-muted-foreground max-w-xl">
+        <p className="text-[1.0625rem] text-muted-foreground max-w-xl underline underline-offset-14 decoration-1 decoration-accent  md:no-underline">
           {subtitle}
         </p>
       )}

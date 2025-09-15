@@ -13,7 +13,7 @@ const Advantages = () => {
   const icons = advantagesData[10].icon as IconType[];
 
   return (
-    <div className="flex flex-col w-full min-h-screen bg-white py-[10rem] z-10 px-20">
+    <div className="flex flex-col w-full min-h-screen bg-white py-[10rem] z-10 md:px-20">
       <SectionHeader
         title="Why Work With Us"
         subtitle="advantages"
@@ -22,7 +22,8 @@ const Advantages = () => {
 
       <SectionHeader2
         title="Collaboration Beyond Projects"
-        subtitle="Forget the hiring hassle — access a full creative team on demand"
+        subtitle="Forget the hiring hassle access a full creative team on demand"
+        className="text-center md:text-left"
       />
 
       <div
