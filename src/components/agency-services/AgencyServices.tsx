@@ -69,7 +69,7 @@ const AgencyServices = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing voluptatum.
             </h3>
           </div>
-          <div className="w-full mx-auto  bg-white p-10">
+          <div className="bg-white p-10">
             {agencyServicesData.map((service, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}

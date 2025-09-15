@@ -23,20 +23,20 @@ const Advantages = () => {
       <SectionHeader2
         title="Collaboration Beyond Projects"
         subtitle="Forget the hiring hassle access a full creative team on demand"
-        className="text-center md:text-left"
+        className="text-center w-[20rem] mx-auto sm:mx-0 sm:w-full md:text-left "
       />
 
       <div
-        className="grid gap-[0.8rem] mx-auto"
-        style={{
-          gridTemplateColumns: "32rem 32rem 32rem",
-          gridTemplateRows: "650px 320px 310px",
-        }}
+        className="
+          grid grid-cols-1 gap-[0.8rem] mx-auto
+          lg:[grid-template-columns:32rem_32rem_32rem]
+          lg:[grid-template-rows:650px_320px_310px]
+        "
       >
         {/* Fila 1 */}
         <GridBlock
           height="650px"
-          className="col-start-1 row-start-1 row-span-1 relative  "
+          className="lg:col-start-1 lg:row-start-1 lg:row-span-1 relative"
           background="bg-gradient-to-br from-[#c4c7c6] to-[#e5e6e5] "
         >
           <div className="flex flex-col">
@@ -58,7 +58,7 @@ const Advantages = () => {
 
         <GridBlock
           height="calc(650px/2 - 0.4rem)"
-          className="col-start-2 row-start-1"
+          className="lg:col-start-2 lg:row-start-1"
           background="bg-[#f6f6f6]"
         >
           <div className="flex flex-col items-center justify-center w-full h-full gap-5">
@@ -91,7 +91,7 @@ const Advantages = () => {
 
         <GridBlock
           height="calc(650px/2 - 0.4rem)"
-          className="col-start-2 row-start-1 self-end bg-[var(--color-orange-accent)] md:"
+          className="lg:col-start-2 lg:row-start-1 lg:self-end bg-[var(--color-orange-accent)] md:"
         >
           <div className="flex flex-col items-center justify-center w-full h-full mt-6">
             <div className="flex flex-col items-center justify-center gap-2">
@@ -107,7 +107,7 @@ const Advantages = () => {
         {/* Block 4 fila 1 */}
         <GridBlock
           height="650px"
-          className="col-start-3 row-start-1 row-span-1 xs:col-start-1 xs:row-start-2"
+          className="lg:col-start-3 lg:row-start-1 lg:row-span-1"
         >
           <div className="relative w-full h-full">
             <img
@@ -125,7 +125,7 @@ const Advantages = () => {
         </GridBlock>
 
         {/* Fila 2 */}
-        <GridBlock height="320px" className="col-start-1 row-start-2">
+        <GridBlock height="320px" className="lg:col-start-1 lg:row-start-2">
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#FAFAFA]">
             <h2 className="text-[3rem] font-semibold text-[#333336] mb-2">
               {advantagesData[4].title}
@@ -137,7 +137,7 @@ const Advantages = () => {
         <GridBlock
           width="15.6rem"
           height="320px"
-          className="col-start-2 row-start-2"
+          className="lg:col-start-2 lg:row-start-2"
         >
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#f6f6f6] gap-3">
             <h2 className="text-[1.0625rem] font-bold text-[#333336] mb-2">
@@ -165,7 +165,7 @@ const Advantages = () => {
         <GridBlock
           width="15.6rem"
           height="320px"
-          className="col-start-2 row-start-2 justify-self-end"
+          className="lg:col-start-2 lg:row-start-2 lg:justify-self-end"
         >
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#f6f6f6] gap-3">
             <h2 className="text-[1.0625rem] font-bold text-[#333336] mb-2">
@@ -190,7 +190,7 @@ const Advantages = () => {
           </div>
         </GridBlock>
 
-        <GridBlock height="320px" className="col-start-3 row-start-2">
+        <GridBlock height="320px" className="lg:col-start-3 lg:row-start-2">
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#F3F3F3]">
             <h2 className="text-[3rem] font-semibold text-[#333336] mb-2">
               {advantagesData[7].title}
@@ -220,7 +220,7 @@ const Advantages = () => {
         </GridBlock>
 
         {/* Fila 3 */}
-        <GridBlock height="310px" className="col-start-1 row-start-3">
+        <GridBlock height="310px" className="lg:col-start-1 lg:row-start-3">
           <div
             className="flex flex-col justify-center w-full h-full bg-gradient-to-l from-[#f8fbfd] to-[#eaf1f5]
 "
@@ -250,7 +250,7 @@ const Advantages = () => {
           </div>
         </GridBlock>
 
-        <GridBlock height="310px" className="col-start-2 row-start-3">
+        <GridBlock height="310px" className="lg:col-start-2 lg:row-start-3">
           <div className="flex flex-col justify-center w-full h-full bg-[#FAFAFA]">
             <h2 className="text-[2rem] font-semibold mb-2 text-[var(--color-orange-accent)]">
               {advantagesData[9].title}
@@ -261,7 +261,7 @@ const Advantages = () => {
           </div>
         </GridBlock>
 
-        <GridBlock height="310px" className="col-start-3 row-start-3">
+        <GridBlock height="310px" className="lg:col-start-3 lg:row-start-3">
           <div className="flex flex-col justify-center w-full h-full bg-[#F3F3F3]">
             {icons && icons[0] && (
               <span className="text-[3rem] mb-2">
