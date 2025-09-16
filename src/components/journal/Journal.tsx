@@ -30,14 +30,14 @@ const Insights = () => {
       />
 
       <div className="flex justify-center mt-8">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
           {insightsData.map((item, index) => (
             <GridBlockWithHover key={index}>
               <GridBlock
-                width="48rem"
-                height="31.25rem"
                 background="none"
-                className="relative overflow-hidden"
+                className="relative
+                 h-96
+                overflow-hidden xl:w-[48rem] xl:h-[31.25rem]"
               >
                 <div className="w-full h-full flex flex-col justify-between relative">
                   <img

@@ -10,7 +10,7 @@ type GridBlockProps = {
 };
 
 const GridBlock = ({
-  width = "32rem",
+  width = "",
   height,
   background,
   children,
