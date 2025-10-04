@@ -8,7 +8,7 @@ import HoverUnderlineLink from "@/components/common/hovers/HoverUnderlineLink";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col w-full  bg-white py-[10rem] z-10 px-20">
+    <div className="flex flex-col w-full bg-white py-[5rem] z-10 sm:py-[10rem] md:px-[4rem]">
       <SectionHeader
         title="Voices of Trust"
         subtitle="testimonials"
@@ -19,16 +19,16 @@ const Testimonials = () => {
         title="Real stories from satisfied partners"
         subtitle="Discover how our creative solutions helped them thrive"
         className="flex max-w-[70rem]"
-        titleStyle="text-base/19"
-        subtitleStyle="mt-[1rem]"
+        titleStyle="text-base/14 text-center md:text-left"
+        subtitleStyle="mt-[1rem] text-center md:text-left"
       />
 
-      <div className="flex justify-between h-[500px]">
-        <div className="w-[29rem] bg-gray-600 h-full overflow-hidden">
+      <div className="flex flex-col justify-between md:h-[500px] md:flex-row">
+        <div className="h-auto md:h-full md:w-[29rem] bg-gray-600 overflow-hidden">
           <img
             src="/images/testimonials/img1.png"
             alt="Testimonials"
-            className="w-[32rem] h-full"
+            className="w-full h-auto md:w-[32rem] md:h-full"
           />
         </div>
 
@@ -95,14 +95,20 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="flex mx-auto items-center text-black text-center mt-20 gap-2.5 p-6">
+      <div className="flex mx-auto flex-col items-center text-black text-center mt-20 gap-2.5 p-6 xl:flex-row">
         <p className="font-display text-5xl ">Ready to elevate your brand?</p>
-        <div className="w-px h-12 bg-[#6f6f6f]"></div>
+        <div className="w-px h-12 bg-[#6f6f6f] hidden xl:block"></div>
 
         <div className="text-3xl flex">
           <div className="text-3xl flex gap-4">
-            <HoverUnderlineLink text="discover our craft" />
-            <HoverUnderlineLink text="choose a plan" />
+            <HoverUnderlineLink
+              classNameText="!text-2xl xl:!text-3xl"
+              text="discover our craft"
+            />
+            <HoverUnderlineLink
+              classNameText="!text-2xl xl:!text-3xl"
+              text="choose a plan"
+            />
           </div>
         </div>
       </div>

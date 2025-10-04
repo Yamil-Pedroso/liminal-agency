@@ -1,5 +1,6 @@
 ✔️ Breakpoints por defecto en Tailwind CSS:
 Breakpoint	Prefix	Min-width	Dispositivo aproximado
+xs  xs: 300px teléfonos pequeños
 sm	sm:	640px	Teléfonos grandes
 md	md:	768px	Tablets
 lg	lg:	1024px	Laptops

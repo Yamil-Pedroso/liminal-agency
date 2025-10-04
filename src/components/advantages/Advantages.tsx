@@ -251,7 +251,7 @@ const Advantages = () => {
         </GridBlock>
 
         <GridBlock height="310px" className="lg:col-start-2 lg:row-start-3">
-          <div className="flex flex-col justify-center w-full h-full bg-[#FAFAFA]">
+          <div className="flex flex-col justify-center w-full h-full bg-[#FAFAFA] p-8">
             <h2 className="text-[2rem] font-semibold mb-2 text-[var(--color-orange-accent)]">
               {advantagesData[9].title}
             </h2>
@@ -262,7 +262,7 @@ const Advantages = () => {
         </GridBlock>
 
         <GridBlock height="310px" className="lg:col-start-3 lg:row-start-3">
-          <div className="flex flex-col justify-center w-full h-full bg-[#F3F3F3]">
+          <div className="flex flex-col justify-center w-full h-full bg-[#F3F3F3] p-8">
             {icons && icons[0] && (
               <span className="text-[3rem] mb-2">
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -288,14 +288,20 @@ const Advantages = () => {
         </GridBlock>
       </div>
 
-      <div className="flex mx-auto items-center text-black text-center mt-20 gap-2.5 p-6">
+      <div className="flex mx-auto flex-col items-center text-black text-center mt-20 gap-2.5 p-6 xl:flex-row">
         <p className="font-display text-5xl ">Ready to build?</p>
-        <div className="w-px h-12 bg-[#6f6f6f]"></div>
+        <div className="w-px h-12 bg-[#6f6f6f] hidden xl:block"></div>
 
         <div className="text-3xl flex">
-          <div className="text-3xl flex gap-4">
-            <HoverUnderlineLink text="discover our craft" />
-            <HoverUnderlineLink text="choose a plan" />
+          <div className="flex text-3xl gap-4">
+            <HoverUnderlineLink
+              classNameText="!text-2xl xl:!text-3xl"
+              text="discover our craft"
+            />
+            <HoverUnderlineLink
+              classNameText="!text-2xl xl:!text-3xl"
+              text="choose a plan"
+            />
           </div>
         </div>
       </div>

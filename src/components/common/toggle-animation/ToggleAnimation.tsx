@@ -17,8 +17,8 @@ const ToggleAnimation: React.FC<ToggleAnimationProps> = ({
   return (
     <div className="flex justify-between items-center w-full p-4 mb-4 relative">
       <div className="overflow-hidden">
-        <div className="flex items-center w-full gap-4 ">
-          <h3 className="text-[1.75rem] text-[#333336] font-semibold whitespace-nowrap ">
+        <div className="flex items-center gap-4  w-full">
+          <h3 className="text-[1.4rem]  sm:text-[1.75rem] text-[#333336] font-semibold whitespace-nowrap ">
             {question}
           </h3>
         </div>
@@ -31,7 +31,7 @@ const ToggleAnimation: React.FC<ToggleAnimationProps> = ({
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="text-[#8A8A91] text-[1.75rem] text-base/8 max-w-[50rem]"
+              className="text-[#8A8A91] text-[1.4rem] sm:text-[1.75rem] text-base/8 max-w-[50rem]"
             >
               {answer}
             </motion.p>

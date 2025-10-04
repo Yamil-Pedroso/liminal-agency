@@ -11,7 +11,7 @@ const Pricing = () => {
   const [isPro, setIsPro] = useState(false);
 
   return (
-    <div className="flex flex-col  items-center w-full h-full py-[10rem] z-10">
+    <div className="flex flex-col  items-center w-full h-full  z-10 bg-white">
       <SectionHeader
         title="Creative Subscriptions"
         subtitle="pricing"
@@ -72,7 +72,7 @@ const Pricing = () => {
           width="32rem"
           height="43.75rem"
           background="bg-white"
-          className="p-6"
+          className="p-6 flex justify-center xs:justify-start"
         >
           <PlanFeatures content={isPro ? proPlanOptions : framePlanOptions} />
         </GridBlock>

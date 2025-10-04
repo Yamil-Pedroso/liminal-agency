@@ -9,8 +9,8 @@ interface PlanFeaturesProps {
 
 const PlanFeatures: React.FC<PlanFeaturesProps> = ({ content }) => {
   return (
-    <div>
-      <ul className="space-y-4">
+    <div className="">
+      <ul className="space-y-4 ">
         {content.map((item, index) => (
           <div key={index} className="max-w-[22rem]">
             <div className="flex items-start gap-4 mb-8">
