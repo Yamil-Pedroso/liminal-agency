@@ -16,7 +16,7 @@ const AboutServices = () => {
         <div>
           <div className="w-[51.875rem] h-[25rem] relative">
             <img
-              src="/images/services/img1.png"
+              src="/images/services/img1.webp"
               alt="About Services"
               className="w-full h-full object-cover"
             />

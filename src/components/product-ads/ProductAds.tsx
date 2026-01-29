@@ -22,7 +22,7 @@ const ProductAds = () => {
       {/* Primera imagen */}
       <div className="flex justify-center items-center w-full h-screen sticky top-0 overflow-hidden">
         <motion.img
-          src="./images/achievements/img1.jpg"
+          src="./images/achievements/img1.webp"
           alt="Product Ad 1"
           className="w-full h-full object-cover"
           style={{
@@ -41,7 +41,7 @@ const ProductAds = () => {
       {/* Segunda imagen */}
       <div className="flex justify-center items-center w-full h-screen sticky top-0 overflow-hidden">
         <motion.img
-          src="./images/achievements/img2.png"
+          src="./images/achievements/img2.webp"
           alt="Product Ad 2"
           className="w-full h-full object-cover brightness-80"
           style={{
@@ -60,7 +60,7 @@ const ProductAds = () => {
       {/* Tercera imagen */}
       <div className="flex justify-center items-center w-full h-screen sticky top-0 overflow-hidden">
         <motion.img
-          src="./images/achievements/img3.png"
+          src="./images/achievements/img3.webp"
           alt="Product Ad 3"
           className="w-full h-full object-cover"
           style={{

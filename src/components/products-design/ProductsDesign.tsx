@@ -18,11 +18,10 @@ const ProductsDesign = () => {
   const yLeft3 = useTransform(scrollYProgress, [0, 1], [0, -350]);
   const yRight3 = useTransform(scrollYProgress, [0, 1], [0, -400]);
 
-  const decreaseMainImageSize = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
   const increaseTextSize = useTransform(
     scrollYProgress,
     [0, 1],
-    ["6rem", "10rem"]
+    ["6rem", "10rem"],
   );
   const textOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
@@ -61,7 +60,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[40vw] lg:h-[25vh] lg:w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-10deg]">
             <img
-              src="./images/productsDesign/img2.jpg"
+              src="./images/productsDesign/img2.webp"
               alt="Producto 1"
               className="h-full w-full object-cover"
             />
@@ -75,7 +74,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[25vw] lg:h-[20vh] lg:w-[12vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[8deg]">
             <img
-              src="./images/productsDesign/img3.jpg"
+              src="./images/productsDesign/img3.webp"
               alt="Producto 2"
               className="h-full w-full object-cover"
             />
@@ -89,7 +88,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[30vw] lg:h-[28vh] lg:w-[16vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[5deg]">
             <img
-              src="./images/productsDesign/img4.jpg"
+              src="./images/productsDesign/img4.webp"
               alt="Producto 3"
               className="h-full w-full object-cover"
             />
@@ -103,7 +102,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[30vw] lg:h-[22vh] lg:w-[14vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-12deg]">
             <img
-              src="./images/productsDesign/img5.jpg"
+              src="./images/productsDesign/img5.webp"
               alt="Producto 4"
               className="h-full w-full object-cover"
             />
@@ -117,7 +116,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[40vw] lg:h-[24vh] lg:w-[13vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[-5deg]">
             <img
-              src="./images/productsDesign/img6.jpg"
+              src="./images/productsDesign/img6.webp"
               alt="Producto 5"
               className="h-full w-full object-cover"
             />
@@ -131,7 +130,7 @@ const ProductsDesign = () => {
         >
           <div className="h-auto w-[40vw] lg:h-[26vh] lg:w-[15vw] bg-white rounded-lg shadow-lg overflow-hidden transform rotate-[15deg]">
             <img
-              src="./images/productsDesign/img7.jpg"
+              src="./images/productsDesign/img7.webp"
               alt="Producto 6"
               className="h-full w-full object-cover"
             />

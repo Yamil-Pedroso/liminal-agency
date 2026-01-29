@@ -16,7 +16,7 @@ export const strategyContent: SectionContent[] = [
     subtitle:
       "Great design starts with purpose. We align aesthetics with business goals to create solutions that truly matter.",
     image: {
-      src: "./images/about/strategy/img1.png",
+      src: "./images/about/strategy/img1.webp",
       alt: "strategy-img1",
     },
   },
@@ -25,7 +25,7 @@ export const strategyContent: SectionContent[] = [
     subtitle:
       "We focus on meaningful impact over quick fixes. Each collaboration is a chance to build long-term value through intentional design.",
     image: {
-      src: "./images/about/strategy/img2.png",
+      src: "./images/about/strategy/img2.webp",
       alt: "strategy-img2",
     },
   },
@@ -34,7 +34,7 @@ export const strategyContent: SectionContent[] = [
     subtitle:
       "Our strength lies in clarity and teamwork. Together, we simplify complexity into intuitive, high-impact digital experiences.",
     image: {
-      src: "./images/about/strategy/img3.png",
+      src: "./images/about/strategy/img3.webp",
       alt: "strategy-img3",
     },
   },

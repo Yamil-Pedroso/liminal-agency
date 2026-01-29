@@ -55,7 +55,7 @@ const Achievements = () => {
         <div className="text-[#C0C0C0] w-full h-[40rem] 2xl:w-[50%] 2xl:h-[30rem] overflow-hidden relative">
           <img
             className="w-full 2xl:w-full 2xl:h-full object-cover "
-            src="./images/achievements/img5.png"
+            src="./images/achievements/img5.webp"
             alt="Achievements"
           />
           <motion.button

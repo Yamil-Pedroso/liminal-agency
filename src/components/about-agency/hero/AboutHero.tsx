@@ -15,7 +15,7 @@ const AboutHero = () => {
       </div>
       <div className="w-full h-screen fixed inset-0 bg-gradient-to-r from-[#f6f6f6] to-[#ffffff] ">
         <img
-          src="/images/about/img1.png"
+          src="/images/about/img1.webp"
           alt="About Agency"
           className="w-full h-full object-cover brightness-90"
         />

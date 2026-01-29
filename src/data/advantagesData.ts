@@ -9,7 +9,7 @@ export const advantagesData: SectionContent[] = [
     subtitle: "A monthly all-in-one package for boundless creative potential",
     quantity: 0,
     image: {
-      src: "./images/benefits/hand-card.png",
+      src: "./images/benefits/hand-card.webp",
       alt: "Benefits Image",
     },
     icon: "icon-premium",
@@ -39,7 +39,7 @@ export const advantagesData: SectionContent[] = [
     subtitle: "Simple, consistent pricing with no surprises",
     quantity: 0,
     image: {
-      src: "./images/benefits/girl.png",
+      src: "./images/benefits/girl.webp",
       alt: "Benefits Image",
     },
     icon: "icon-affordable",
@@ -89,7 +89,7 @@ export const advantagesData: SectionContent[] = [
     subtitle: "Based on post-project feedback",
     quantity: 96,
     image: {
-      src: "./images/benefits/smily-cat.png",
+      src: "./images/benefits/smily-cat.webp",
       alt: "Benefits Image",
     },
     icon: "icon-satisfaction",

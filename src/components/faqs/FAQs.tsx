@@ -24,7 +24,7 @@ const FAQs = () => {
         subtitleStyle="mt-[1rem]"
       />
       <div className="flex flex-col mx-auto justify-center w-full gap-[6rem] xl:flex-row">
-        <div className="flex mx-auto items-center w-full max-w-4xl">
+        <div className="flex  items-center w-full max-w-4xl">
           <div className="w-full">
             {faqsData.slice(0, 7).map((faq, index) => (
               <>
@@ -46,7 +46,7 @@ const FAQs = () => {
         <div className="flex flex-col items-center">
           <div className="w-[18rem] h-[23rem] bg-gray-600">
             <img
-              src="/images/faqs/img1.png"
+              src="/images/faqs/img1.webp"
               alt="FAQs"
               className="w-full h-full object-cover"
             />

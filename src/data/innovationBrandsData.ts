@@ -9,7 +9,7 @@ export const innovationBrandsData: SectionContent[] = [
       "Discover the collaborators shaping the future of design with us.",
     ],
     image: {
-      src: "/images/innovation-brands/bg.png",
+      src: "/images/innovation-brands/bg.webp",
       alt: "Innovation Brands bg",
     },
   },

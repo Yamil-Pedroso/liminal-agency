@@ -12,13 +12,13 @@ const Celebration = () => {
   const decreaseImageSize = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    [1.4, 1, 1]
+    [1.4, 1, 1],
   );
 
   const decreaseTextSize = useTransform(
     scrollYProgress,
     [0, 0.3, 0.6],
-    ["50rem", "20rem", "20rem"]
+    ["50rem", "20rem", "20rem"],
   );
 
   const smoothTextSize = useSpring(decreaseTextSize, {
@@ -55,7 +55,7 @@ const Celebration = () => {
       <div className="flex justify-center items-center w-full bg-[#cccccc] overflow-hidden">
         <motion.img
           style={{ scale: decreaseImageSize }}
-          src="/images/about/celebration/img1.png"
+          src="/images/about/celebration/img1.webp"
           alt="Celebration"
           className="w-full h-[46rem] relative object-cover"
         />

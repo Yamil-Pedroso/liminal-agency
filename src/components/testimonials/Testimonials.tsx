@@ -26,7 +26,7 @@ const Testimonials = () => {
       <div className="flex flex-col justify-between md:h-[500px] md:flex-row">
         <div className="h-auto md:h-full md:w-[29rem] bg-gray-600 overflow-hidden">
           <img
-            src="/images/testimonials/img1.png"
+            src="/images/testimonials/img1.webp"
             alt="Testimonials"
             className="w-full h-auto md:w-[32rem] md:h-full"
           />

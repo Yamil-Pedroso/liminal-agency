@@ -11,7 +11,7 @@ export const heroSection: SectionContent = {
   description:
     "We are a collective of creators driven by the belief that collaboration sparks innovation. Whether you're here to build, share, or connect — you’ve found the right space.",
   image: {
-    src: "./images/hero/hero1.png",
+    src: "./images/hero/hero1.webp",
     alt: "Hero Image",
   },
 };
